@@ -1,1 +1,325 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>YouTube Skip | Premium Distraction-Free Experience</title> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet"> <style> :root { --bg-dark: #07070a; --primary: #ff003c; --secondary: #7b2cbf; --text-main: #ffffff; --text-muted: #a1a1aa; --card-bg: rgba(20, 20, 25, 0.45); --card-border: rgba(255, 255, 255, 0.08); --card-glow: rgba(123, 44, 191, 0.2); } * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }body { background-color: var(--bg-dark); color: var(--text-main); overflow-x: hidden; line-height: 1.6; } .ambient-bg { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; overflow: hidden; z-index: -1; background: radial-gradient(circle at 50% 50%, #151520 0%, #07070a 100%); } .orb { position: absolute; border-radius: 50%; filter: blur(140px); opacity: 0.5; animation: float 14s infinite alternate ease-in-out; } .orb-red { width: 600px; height: 600px; background: var(--primary); top: -150px; left: -100px; } .orb-purple { width: 700px; height: 700px; background: var(--secondary); bottom: -200px; right: -150px; animation-delay: -7s; } @keyframes float { 0% { transform: translateY(0) translateX(0) scale(1); } 100% { transform: translateY(80px) translateX(40px) scale(1.1); } }nav { position: fixed; width: 100%; top: 0; z-index: 100; background: rgba(7, 7, 10, 0.5); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); border-bottom: 1px solid var(--card-border); padding: 16px 0; transition: all 0.3s ease; } .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; } .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; color: white; font-weight: 800; font-size: 24px; letter-spacing: -0.5px; } .logo-wrap img { width: 42px; height: 42px; filter: drop-shadow(0 0 15px rgba(255, 0, 60, 0.4)); } .install-btn-small { background: rgba(255, 255, 255, 0.05); color: white; padding: 10px 24px; border-radius: 100px; text-decoration: none; font-weight: 600; border: 1px solid var(--card-border); transition: all 0.3s; font-size: 15px; } .install-btn-small:hover { background: white; color: black; transform: translateY(-2px); }.hero { max-width: 1240px; margin: 180px auto 120px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; padding: 0 40px; align-items: center; } .hero-text h1 { font-size: clamp(52px, 6.5vw, 84px); font-weight: 800; line-height: 1.05; margin-bottom: 28px; letter-spacing: -2.5px; } .highlight { background: linear-gradient(135deg, #fff 20%, var(--primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; } .hero-text p { font-size: 21px; color: var(--text-muted); margin-bottom: 48px; max-width: 540px; font-weight: 300; line-height: 1.5; } .cta-wrap { display: flex; gap: 20px; align-items: center; } .cta-btn-main { background: linear-gradient(135deg, var(--primary), #b3002a); color: white; padding: 20px 48px; border-radius: 100px; font-size: 18px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 15px 35px rgba(255, 0, 60, 0.4); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); } .cta-btn-main:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 25px 50px rgba(255, 0, 60, 0.6); }.features { max-width: 1240px; margin: 0 auto 140px; padding: 0 40px; } .section-title { text-align: center; font-size: 48px; font-weight: 800; margin-bottom: 70px; letter-spacing: -1px; } .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; } .feature-card { background: var(--card-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--card-border); padding: 48px; border-radius: 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.5s; position: relative; overflow: hidden; } .feature-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 100%); pointer-events: none; } .feature-card:hover { transform: translateY(-16px); border-color: rgba(255,255,255,0.25); box-shadow: 0 30px 60px rgba(0,0,0,0.7), 0 0 40px var(--card-glow); } .card-icon { width: 64px; height: 64px; background: rgba(255,0,60,0.1); border-radius: 20px; display: flex; justify-content: center; align-items: center; font-size: 28px; margin-bottom: 32px; color: var(--primary); border: 1px solid rgba(255,0,60,0.2); } .feature-card h3 { font-size: 26px; margin-bottom: 18px; font-weight: 600; letter-spacing: -0.5px; } .feature-card p { color: var(--text-muted); font-size: 17px; font-weight: 300; line-height: 1.6; } </style> </head> <body> <div class="ambient-bg"> <div class="orb orb-red"></div>div> <div class="orb orb-purple"></div>div> </div>div> <nav> <div class="nav-container"> <a href="#" class="logo-wrap"> <img src="assets/icons/master_logo.png" alt="YouTube Skip Extension Logo"> YouTube Skip </a>a> <div style="display: flex; gap: 16px;"> <a href="#privacy" class="install-btn-small" style="background: transparent; border-color: transparent;">Privacy Policy</a>a> <a href="https://chromewebstore.google.com/detail/joadeifjglkdhdogncodbgfdoolmhgbh" target="_blank" class="install-btn-small">Add to Chrome</a>a> </div>div> </div>div> </nav> <main> <section class="hero"> <div class="hero-text"> <h1>The Premium <span class="highlight">Ad-Free</span>span> Experience.</h1> <p>Designed for absolute speed. Reclaim your time with our intelligent extension that skips video interruptions the precise millisecond they appear.</p> <div class="cta-wrap"> <a href="https://chromewebstore.google.com/detail/joadeifjglkdhdogncodbgfdoolmhgbh" target="_blank" class="cta-btn-main">Install Extension Free</a>a> </div>div> </div>div> <div class="hero-visual"> <div class="glow-behind"></div>div> <img src="assets/icons/master_logo.png" alt="YouTube Skip Core Visualization"> </div>div> </section>section> <section class="features"> <h2 class="section-title">Engineered to Perfection</h2> <div class="grid-3"> <div class="feature-card"> <div class="card-icon">Fast</div>div> <h3>Zero Wait Time</h3> <p>Our proprietary architecture detects and eliminates skippable video ads seamlessly. There is absolutely no buffering and no delays.</p> </div>div> <div class="feature-card"> <div class="card-icon">Design</div>div> <h3>Native Aesthetic</h3> <p>We ditched the blocky, dated layouts. Our control panel utilizes a deeply integrated modern design that breathes with YouTube's dark mode.</p> </div>div> <div class="feature-card"> <div class="card-icon">Loop</div>div> <h3>Loop Manager</h3> <p>Can't get enough of a track? Our built-in persistent loop utility allows you to put any media on repeat without reloading the page.</p> </div>div> </div>div> </section>section> <section id="privacy" style="padding: 60px 20px; max-width: 800px; margin: 0 auto; color: #fff; font-family: 'Outfit', sans-serif;"> <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Privacy Policy</h2> <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 20px;"> Last updated: April 11, 2026 </p> <h3 style="font-size: 1.5rem; margin-top: 30px; margin-bottom: 10px;">1. Information We Do Not Collect</h3> <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;"> Auto-Skip for YouTube is designed to respect your privacy. We do not collect, store, transmit, or sell any personally identifiable information, browsing history, or user data. </p> <h3 style="font-size: 1.5rem; margin-top: 30px; margin-bottom: 10px;">2. Local Storage Usage</h3> <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;"> The extension uses your browser's local storage solely to remember your personal application preferences (such as whether the skip or loop feature is toggled on or off). This data never leaves your personal device. </p> <h3 style="font-size: 1.5rem; margin-top: 30px; margin-bottom: 10px;">3. Permissions</h3> <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;"> The host permission for '*://*.youtube.com/*' is required exclusively to detect the YouTube video player and perform automated clicking on the "Skip Ad" button. No telemetry or analytics are gathered from your interactions with the site. </p> <h3 style="font-size: 1.5rem; margin-top: 30px; margin-bottom: 10px;">4. Changes to This Policy</h3> <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;"</p></p></h1></main></nav></body></style></title></head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YouTube Skip | Premium Distraction-Free Experience</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+      <style>
+                :root {
+                              --bg-dark: #07070a;
+                              --primary: #ff003c;
+                              --secondary: #7b2cbf;
+                              --text-main: #ffffff;
+                              --text-muted: #a1a1aa;
+                              --card-bg: rgba(20, 20, 25, 0.45);
+                              --card-border: rgba(255, 255, 255, 0.08);
+                              --card-glow: rgba(123, 44, 191, 0.2);
+                }
+                * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                              font-family: 'Outfit', sans-serif;
+                }
+                body {
+                              background-color: var(--bg-dark);
+                              color: var(--text-main);
+                              overflow-x: hidden;
+                              line-height: 1.6;
+                }
+                .ambient-bg {
+                              position: fixed;
+                              top: 0;
+                              left: 0;
+                              width: 100vw;
+                              height: 100vh;
+                              overflow: hidden;
+                              z-index: -1;
+                              background: radial-gradient(circle at 50% 50%, #151520 0%, #07070a 100%);
+                }
+                .orb {
+                              position: absolute;
+                              border-radius: 50%;
+                              filter: blur(140px);
+                              opacity: 0.5;
+                              animation: float 14s infinite alternate ease-in-out;
+                }
+                .orb-red {
+                              width: 600px;
+                              height: 600px;
+                              background: var(--primary);
+                              top: -150px;
+                              left: -100px;
+                }
+                .orb-purple {
+                              width: 700px;
+                              height: 700px;
+                              background: var(--secondary);
+                              bottom: -200px;
+                              right: -150px;
+                              animation-delay: -7s;
+                }
+                @keyframes float {
+                              0% { transform: translateY(0) translateX(0) scale(1); }
+                              100% { transform: translateY(80px) translateX(40px) scale(1.1); }
+                }
+                nav {
+                              position: fixed;
+                              width: 100%;
+                              top: 0;
+                              z-index: 100;
+                              background: rgba(7, 7, 10, 0.5);
+                              backdrop-filter: blur(30px);
+                              -webkit-backdrop-filter: blur(30px);
+                              border-bottom: 1px solid var(--card-border);
+                              padding: 16px 0;
+                              transition: all 0.3s ease;
+                }
+                .nav-container {
+                              max-width: 1200px;
+                              margin: 0 auto;
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              padding: 0 40px;
+                }
+                .logo-wrap {
+                              display: flex;
+                              align-items: center;
+                              gap: 14px;
+                              text-decoration: none;
+                              color: white;
+                              font-weight: 800;
+                              font-size: 24px;
+                              letter-spacing: -0.5px;
+                }
+                .logo-wrap img {
+                              width: 42px;
+                              height: 42px;
+                              filter: drop-shadow(0 0 15px rgba(255, 0, 60, 0.4));
+                }
+                .install-btn-small {
+                              background: rgba(255, 255, 255, 0.05);
+                              color: white;
+                              padding: 10px 24px;
+                              border-radius: 100px;
+                              text-decoration: none;
+                              font-weight: 600;
+                              border: 1px solid var(--card-border);
+                              transition: all 0.3s;
+                              font-size: 15px;
+                }
+                .install-btn-small:hover {
+                              background: white;
+                              color: black;
+                              transform: translateY(-2px);
+                }
+                .hero {
+                              max-width: 1240px;
+                              margin: 180px auto 120px;
+                              display: grid;
+                              grid-template-columns: 1.1fr 0.9fr;
+                              gap: 60px;
+                              padding: 0 40px;
+                              align-items: center;
+                }
+                .hero-text h1 {
+                              font-size: clamp(52px, 6.5vw, 84px);
+                              font-weight: 800;
+                              line-height: 1.05;
+                              margin-bottom: 28px;
+                              letter-spacing: -2.5px;
+                }
+                .highlight {
+                              background: linear-gradient(135deg, #fff 20%, var(--primary) 100%);
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
+                }
+                .hero-text p {
+                              font-size: 21px;
+                              color: var(--text-muted);
+                              margin-bottom: 48px;
+                              max-width: 540px;
+                              font-weight: 300;
+                              line-height: 1.5;
+                }
+                .cta-wrap {
+                              display: flex;
+                              gap: 20px;
+                              align-items: center;
+                }
+                .cta-btn-main {
+                              background: linear-gradient(135deg, var(--primary), #b3002a);
+                              color: white;
+                              padding: 20px 48px;
+                              border-radius: 100px;
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-decoration: none;
+                              display: inline-flex;
+                              align-items: center;
+                              justify-content: center;
+                              box-shadow: 0 15px 35px rgba(255, 0, 60, 0.4);
+                              transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                }
+                .cta-btn-main:hover {
+                              transform: translateY(-6px) scale(1.02);
+                              box-shadow: 0 25px 50px rgba(255, 0, 60, 0.6);
+                }
+                .features {
+                              max-width: 1240px;
+                              margin: 0 auto 140px;
+                              padding: 0 40px;
+                }
+                .section-title {
+                              text-align: center;
+                              font-size: 48px;
+                              font-weight: 800;
+                              margin-bottom: 70px;
+                              letter-spacing: -1px;
+                }
+                .grid-3 {
+                              display: grid;
+                              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                              gap: 32px;
+                }
+                .feature-card {
+                              background: var(--card-bg);
+                              backdrop-filter: blur(20px);
+                              -webkit-backdrop-filter: blur(20px);
+                              border: 1px solid var(--card-border);
+                              padding: 48px;
+                              border-radius: 32px;
+                              box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+                              transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.5s;
+                              position: relative;
+                              overflow: hidden;
+                }
+                .feature-card::before {
+                              content: '';
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 100%);
+                              pointer-events: none;
+                }
+                .feature-card:hover {
+                              transform: translateY(-16px);
+                              border-color: rgba(255,255,255,0.25);
+                              box-shadow: 0 30px 60px rgba(0,0,0,0.7), 0 0 40px var(--card-glow);
+                }
+                .card-icon {
+                              width: 64px;
+                              height: 64px;
+                              background: rgba(255,0,60,0.1);
+                              border-radius: 20px;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              font-size: 28px;
+                              margin-bottom: 32px;
+                              color: var(--primary);
+                              border: 1px solid rgba(255,0,60,0.2);
+                }
+                .feature-card h3 {
+                              font-size: 26px;
+                              margin-bottom: 18px;
+                              font-weight: 600;
+                              letter-spacing: -0.5px;
+                }
+                .feature-card p {
+                              color: var(--text-muted);
+                              font-size: 17px;
+                              font-weight: 300;
+                              line-height: 1.6;
+                }
+            </style>
+  </head>
+  <body>
+        <div class="ambient-bg">
+                  <div class="orb orb-red"></div>div>
+                  <div class="orb orb-purple"></div>div>
+        </div>div>
+        <nav>
+                  <div class="nav-container">
+                                <a href="#" class="logo-wrap">
+                                                  <img src="assets/icons/master_logo.png" alt="YouTube Skip Extension Logo">
+                                                  YouTube Skip
+                                </a>a>
+                                <div style="display: flex; gap: 16px;">
+                                                  <a href="#privacy" class="install-btn-small" style="background: transparent; border-color: transparent;">Privacy Policy</a>a>
+                                                  <a href="https://chromewebstore.google.com/detail/joadeifjglkdhdogncodbgfdoolmhgbh" target="_blank" class="install-btn-small">Add to Chrome</a>a>
+                                </div>div>
+                  </div>div>
+        </nav>
+        <main>
+                  <section class="hero">
+                                <div class="hero-text">
+                                                  <h1>The Premium <span class="highlight">Ad-Free</span>span> Experience.</h1>
+                                                <p>Designed for absolute speed. Reclaim your time with our intelligent extension that skips video interruptions the precise millisecond they appear.</p>
+                                                <div class="cta-wrap">
+                                                                    <a href="https://chromewebstore.google.com/detail/joadeifjglkdhdogncodbgfdoolmhgbh" target="_blank" class="cta-btn-main">Install Extension Free</a>a>
+                                                </div>div>
+                                </div>div>
+                              <div class="hero-visual">
+                                              <div class="glow-behind"></div>div>
+                                              <img src="assets/icons/master_logo.png" alt="YouTube Skip Core Visualization">
+                              </div>div>
+                  </section>section>
+                <section class="features">
+                            <h2 class="section-title">Engineered to Perfection</h2>
+                            <div class="grid-3">
+                                            <div class="feature-card">
+                                                                <div class="card-icon">Fast</div>div>
+                                                                <h3>Zero Wait Time</h3>
+                                                                <p>Our proprietary architecture detects and eliminates skippable video ads seamlessly. There is absolutely no buffering and no delays.</p>
+                                            </div>div>
+                                            <div class="feature-card">
+                                                                <div class="card-icon">Design</div>div>
+                                                                <h3>Native Aesthetic</h3>
+                                                                <p>We ditched the blocky, dated layouts. Our control panel utilizes a deeply integrated modern design that breathes with YouTube's dark mode.</p>
+                                            </div>div>
+                                            <div class="feature-card">
+                                                                <div class="card-icon">Loop</div>div>
+                                                                <h3>Loop Manager</h3>
+                                                                <p>Can't get enough of a track? Our built-in persistent loop utility allows you to put any media on repeat without reloading the page.</p>
+                                            </div>div>
+                            </div>div>
+                </section>section>
+                <section id="privacy" style="padding: 60px 20px; max-width: 800px; margin: 0 auto; color: #fff; font-family: 'Outfit', sans-serif;">
+                            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Privacy Policy</h2>
+                            <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 20px;">
+                                              Last updated: April 11, 2026
+                            </p>
+                              <h3 style="font-size: 1.5rem; margin-top: 30px; margin-bottom: 10px;">1. Information We Do Not Collect</h3>
+                              <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">
+                                                Auto-Skip for YouTube is designed to respect your privacy. We do not collect, store, transmit, or sell any personally identifiable information, browsing history, or user data.
+                              </p>
+                              <h3 style="font-size: 1.5rem; margin-top: 30px; margin-bottom: 10px;">2. Local Storage Usage</h3>
+                              <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">
+                                                The extension uses your browser's local storage solely to remember your personal application preferences (such as whether the skip or loop feature is toggled on or off). This data never leaves your personal device.
+                              </p>
+                              <h3 style="font-size: 1.5rem; margin-top: 30px; margin-bottom: 10px;">3. Permissions</h3>
+                              <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">
+                                                The host permission for '*://*.youtube.com/*' is required exclusively to detect the YouTube video player and perform automated clicking on the "Skip Ad" button. No telemetry or analytics are gathered from your interactions with the site.
+                              </p>
+                              <h3 style="font-size: 1.5rem; margin-top: 30px; margin-bottom: 10px;">4. Changes to This Policy</h3>
+                              <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">
+                                                If we make any material changes to this Privacy Policy due to updates in extension capabilities, we will notify users by updating this page.
+                              </p>
+                </section>section>
+        </main>
+  </body>
+</html>html>
+
+                            </p></p></h1>
+        </main>
+        </nav>
+  </body>
+      </style></title>
+  </head>
